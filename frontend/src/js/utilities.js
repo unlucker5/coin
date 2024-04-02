@@ -15,6 +15,7 @@ export let buildLoader  = function (){
 }
 export let createLoader = function(){
     setChildren(app, buildLoader())
+    
     app.style.display = 'flex'
     app.style.justifyContent = 'center'
     app.style.alignItems = 'center'
