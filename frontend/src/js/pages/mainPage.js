@@ -69,13 +69,13 @@ export let createMainPage = async function(){
       createAccountCard(newAccountData)
     })
 
-    // апендикс
+
     setChildren(mpTopButton, mpTopButtonText)
     setChildren(mpTopSelect, [mpTopOptionNumber, mpTopOptionBalance, mpTopOptionTrans])
     setChildren(mpTopWrapper, [mpTopHeader,mpTopSelect,mpTopButton])
     setChildren(mpContainer, [mpTopWrapper, mpGridWrapper])
     setChildren(app, mpContainer)
-    // console.log(mpContainer)
+  
     setChildren(document.body, [nav(), app])
 
     mpTopSelect.addEventListener("change", function(){
